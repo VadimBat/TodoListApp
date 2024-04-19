@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update note</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<body>
+
+<form action="/note/update" method="post" class="container col-4">
+    <fieldset updateNote>
+        <legend>Update Note</legend>
+        <div class="mb-3">
+            <label for="id-to-edit" class="form-text text-muted">Id to edit:</label>
+            <input type="text" name="id" class="form-control" id="id-to-edit"/>
+        </div>
+        <div class="mb-3">
+            <label for="title-to-edit" class="form-text text-muted">Title to edit:</label>
+            <input type="text" name="title" class="form-control" id="title-to-edit"/>
+        </div>
+        <div class="mb-3">
+            <label for="content-to-edit" class="form-text text-muted">Content to edit:</label>
+            <input type="text" name="content" class="form-control" id="content-to-edit"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Edit</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
