@@ -1,5 +1,7 @@
 package com.goit.todolist.note.data;
 
+import com.goit.todolist.note.controller.config.NoteNotFoundException;
+
 import java.util.List;
 
 /**
@@ -10,9 +12,9 @@ public interface NoteService {
 
     NoteEntity add(NoteEntity note);
 
-    void deleteById(long id);
+    void deleteById(long id) throws NoteNotFoundException;
 
-    void update(NoteEntity note);
+    void update(NoteEntity note) throws NoteNotFoundException;
 
-    NoteEntity getById(long id);
+    NoteEntity getById(long id) throws NoteNotFoundException;
 }

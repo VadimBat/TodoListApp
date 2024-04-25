@@ -28,7 +28,6 @@ public class NoteDtoServiceImpl implements NoteDtoService {
     @Override
     public NoteDto add(NoteDto note) {
         NoteEntity entity = noteMapper.toNoteEntity(note);
-        //entity.setId(null);
         return noteMapper.toNoteDto(noteService.add(entity));
     }
 
