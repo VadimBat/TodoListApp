@@ -15,7 +15,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -101,12 +100,5 @@ public class CustomUserDetailsService implements UserDetailsService {
     private static class UserData {
         private String password;
         private String authority;
-        /*
-
-INSERT INTO "user" (email, password, authority)
-VALUES ('user@mail.com', 'user_password', 'USER'),
-       ('admin@mail.com', 'admin_password', 'ADMIN');
-
-         */
     }
 }
